@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #282c34;
+    background-image: url('source.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #abb2bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1,
+h2,
+#timer {
+    font-family: 'Fira Code', monospace;
+    color: #61dafb;
+}
+
+.container {
+    background-color: rgba(33, 37, 43, 0.971);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid #61dafb;
+    max-height: 100%; 
+    overflow: hidden; 
+}
+
+.exercise-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(157, 0, 255, 0.3); 
+    max-width: 400px; 
+    width: 100%; 
+    margin: 20px auto;
+    border: 2px solid #6600ff; 
+    box-sizing: border-box; 
+}
+
+.exercise-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: contain; 
+}
+
+
+#timer {
+    font-size: 48px;
+    margin: 20px 0;
+    text-shadow: none;
+}
+
+#controls button,
+#saveSettings {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #61dafb;
+    background-color: #282c34;
+    color: #61dafb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#controls button:hover,
+#saveSettings:hover {
+    background-color: #61dafb;
+    color: #21252b;
+}
+
+#settings {
+    margin: 20px 0;
+}
+
+#settings label {
+    font-size: 16px;
+    color: #abb2bf;
+    margin-right: 10px;
+}
+
+#settings input[type="number"] {
+    padding: 5px;
+    width: 60px;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    color: #abb2bf;
+    background-color: #21252b;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#settings input[type="number"]:focus {
+    border-color: #61dafb;
+    box-shadow: 0 0 8px rgba(97, 218, 251, 0.8);
+}
+
+#exercise {
+    margin-top: 20px;
+}
+
+#exerciseDisplay {
+    font-style: italic;
+    color: #c678dd;
+}
+
